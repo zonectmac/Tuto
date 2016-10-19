@@ -1,0 +1,3 @@
+int id cbLoopViewPager 0x7f030000
+int id loPageTurningPoint 0x7f030001
+int layout include_viewpager 0x7f020000

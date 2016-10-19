@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    xmlns:app="http://schemas.android.com/apk/res/com.xinyanyuan.project.at15">
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/base" >
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base"
+            android:scaleType="fitXY" />
+        <com.xinyanyuan.project.at15.view.CircleImageView
+            android:id="@+id/civ_cion"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:border_width="2dp"
+            app:border_color="@color/white"
+            android:src="@drawable/ai" />
+
+        <TextView
+            android:id="@+id/tv_nickName_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civ_cion"
+              android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/white"
+            android:text="超人强" />
+
+        <TextView
+            android:id="@+id/tv_sexAndage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nickName_me"
+            android:layout_centerHorizontal="true"
+            android:text="男 23"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white" />
+       
+    </RelativeLayout>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_main"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+        
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        
+<LinearLayout 
+    android:layout_width="0dp"
+    android:layout_weight="3"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+        
+     <TextView
+            android:id="@+id/tv_personExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我来到你的城市,走过你曾走过的路................."
+            android:layout_marginTop="5dp"
+             />
+</LinearLayout>
+<View android:layout_width="0.5dp"
+         android:layout_height="match_parent"
+         android:background="@color/line_main"/>
+<LinearLayout 
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+android:gravity="center_horizontal"
+   >
+     
+    <TextView
+        android:id="@+id/tv_constellation" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金牛座"
+           android:layout_marginTop="5dp"
+        />
+</LinearLayout>
+</LinearLayout>
+<View android:layout_height="0.5dp"
+         android:layout_width="match_parent"
+         android:background="@color/line_main"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_moreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_info_01"
+        android:layout_centerVertical="true"
+        android:text="编辑个人资料"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_setting_me"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/setting_02" />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ></LinearLayout>
+</LinearLayout>
+</LinearLayout>

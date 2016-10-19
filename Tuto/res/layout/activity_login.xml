@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/log_bg"
+        android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" >
+
+    <ImageView
+        android:id="@+id/iv_qqLogin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/three_log"
+        android:src="@drawable/qq1" />
+
+    <ImageView
+        android:id="@+id/iv_weinLogin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView2"
+          android:background="@drawable/three_log"
+        android:src="@drawable/weixin1" />
+</LinearLayout>
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="vertical"
+         
+        android:padding="15dp">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/r_me" />
+
+        <EditText
+            android:id="@+id/et_userName_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入手机号"
+            android:textSize="14sp"
+            android:background="@null" >
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/clear" />
+
+    </LinearLayout>
+<View android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/line_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/r_password" />
+
+        <EditText
+            android:id="@+id/et_psw_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入密码"
+             android:textSize="14sp"
+             android:inputType="textPassword"
+            android:background="@null" >
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_showpsw"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/showpsw" />
+
+    </LinearLayout>
+<View android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/line_main"/>
+
+<Button
+    android:id="@+id/btn_logIn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/btn_log_bg"
+    android:text="登录" />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="忘记密码?"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:hint="快速注册>"
+            android:textSize="12sp" />
+    </LinearLayout>
+  
+    </LinearLayout>
+
+</LinearLayout>

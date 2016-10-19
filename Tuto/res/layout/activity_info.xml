@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_main"
+    android:orientation="vertical" >
+    
+ <RelativeLayout 
+          android:id="@+id/rl_mainBar"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/TitleBar"
+          android:background="@color/base">
+
+          <TextView
+              android:id="@+id/tv_mainTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:textColor="@color/white_main"
+              android:textSize="22sp"
+              android:text="动态" />
+             <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/backss" />
+             <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/kzc" />
+      </RelativeLayout> 
+      <com.xinyanyuan.project.at15.view.xlist.XListView
+        android:id="@+id/lv_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_mainBar"
+        android:scrollbars="@null" >
+    </com.xinyanyuan.project.at15.view.xlist.XListView>
+    <RelativeLayout
+        android:id="@+id/rl_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_20"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/get_info_01"
+                android:hint="说点什么吧..."
+                android:paddingLeft="5dp"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tv_send_bg"
+                android:enabled="false"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="发送"
+                android:textColor="@color/tv_send_text"
+                android:textSize="15sp" />
+        </LinearLayout>  
+</RelativeLayout>
+
+    
+
+</RelativeLayout>

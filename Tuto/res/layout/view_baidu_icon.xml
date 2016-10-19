@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" xmlns:app="http://schemas.android.com/apk/res/com.xinyanyuan.project.at15">
+    
+<com.xinyanyuan.project.at15.view.CircleImageView
+        android:id="@+id/civ_iconBD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:border_width="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:text="你好周杰伦杰000000"
+        android:textSize="13sp" />
+    
+</LinearLayout>

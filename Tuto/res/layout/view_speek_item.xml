@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" 
+        android:orientation="horizontal">
+
+        <com.xinyanyuan.project.at15.view.CircleImageView
+            android:id="@+id/civ_speekIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ai" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/tv_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="超人强"
+                android:textSize="10sp"/>
+            <TextView 
+               android:id="@+id/tv_publicTime"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="今天 16:25"
+                android:textColor="@color/black_70"
+                android:gravity="bottom"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+ <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="有红酒的快来吧！"
+        android:textSize="12sp" />
+    
+    <com.xinyanyuan.project.at15.view.GridViewLin
+        android:id="@+id/gv_speekImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+          android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp" 
+        android:numColumns="3" >
+    </com.xinyanyuan.project.at15.view.GridViewLin>
+ 
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/fbx"/>
+        <TextView 
+            android:id="@+id/tv_mobileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iphone 18"
+            android:textSize="10sp"
+            android:textColor="@color/base"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+              android:id="@+id/iv_share"
+            android:layout_width="34dp"
+            android:layout_height="17dp"
+            android:src="@drawable/frl"
+            android:background="@drawable/share_praise_comment_bg"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:layout_weight="1" >
+        </View>
+        <ImageView 
+              android:id="@+id/iv_praise"
+            android:layout_width="34dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="10dp"
+             android:background="@drawable/share_praise_comment_bg"
+            android:src="@drawable/ljy"/>
+        <ImageView 
+            android:id="@+id/iv_comment"
+            android:layout_width="34dp"
+            android:layout_height="17dp"
+             android:background="@drawable/share_praise_comment_bg"
+            android:src="@drawable/ljs"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        
+     <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ljy" />
+
+        <TextView
+            android:id="@+id/tv_praises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="飞天神猪觉得很赞"
+            android:textColor="@color/base"
+            android:textSize="8sp" />
+        
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        
+     <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/hou" />
+
+        <TextView
+            android:id="@+id/tv_browseNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="浏览了108次"
+            android:textColor="@color/base"
+            android:textSize="8sp" />
+        
+    </LinearLayout>
+    <com.xinyanyuan.project.at15.view.ListViewLin
+        android:id="@+id/lv_pingLun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@color/white_main"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent">
+    </com.xinyanyuan.project.at15.view.ListViewLin>
+    
+    
+    <TextView
+        android:id="@+id/tv_say"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/share_praise_comment_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="我也说一句..."
+        android:textColor="@color/black_70"
+        android:textSize="8sp" >
+    </TextView>
+    
+</LinearLayout>
